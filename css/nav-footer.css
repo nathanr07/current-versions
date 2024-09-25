@@ -1,0 +1,33 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    background-color: #344e41; 
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000;
+}
+
+nav a {
+    color: #ecf1ec; 
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s; 
+    font-weight: 600; 
+    padding: 10px; 
+    line-height: 1; 
+}
+
+
+nav a.nav-home {
+    font-size: 25px; 
+}
+
+/* Hover effects */
+nav a:hover {
+    color: #c3c3c3; 
+    transform: scale(1.1); 
+}
