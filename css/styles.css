@@ -22,7 +22,7 @@ nav a.nav-home {
 
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero2.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero2.jpg");
     height: 85%;
     background-position: center;
     background-repeat: no-repeat;
@@ -42,6 +42,7 @@ nav a.nav-home {
     width: 20vw;
 }
 
+/* Base styles for hero text */
 .hero-text h1 {
     font-size: 5rem;
     margin: 0;
@@ -53,6 +54,50 @@ nav a.nav-home {
     font-size: 1.2rem;
     width: 400px;
 }
+
+/* Media query for medium-sized screens */
+@media (max-width: 1024px) {
+    .hero-text h1 {
+        font-size: 3.5rem; /* Decrease font size for h1 */
+    }
+
+    .hero-text p {
+        font-size: 1rem; /* Adjust font size for paragraph */
+        width: 300px; /* Adjust width for better fit */
+    }
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .hero-text {
+        text-align: center; /* Center the text on smaller screens */
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80vw; /* Increase width for smaller screens */
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem; /* Further decrease h1 font size */
+    }
+
+    .hero-text p {
+        font-size: 0.9rem; /* Adjust paragraph font size */
+        width: 100%; /* Make text fill the container */
+    }
+}
+
+/* Media query for very small screens */
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 2rem; /* Smallest font size for mobile */
+    }
+
+    .hero-text p {
+        font-size: 0.8rem; /* Smallest paragraph font size */
+        width: 90%; /* Maximize use of mobile screen width */
+    }
+}
+
 
 .intro {
     display: flex;
